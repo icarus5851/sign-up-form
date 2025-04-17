@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+</head>
+<body>
+    <div class="img-container">
+        <nav> 
+            <img src="images/logo.png" alt="">
+            <span>Odin Space Project</span>
+        </nav>
+        
+    </div>
+    <div class="form-container">
+        <div class="title">
+            The sky is not the limit — it’s just the beginning.
+        </div>
+
+        <form action="https://httpbin.org/post" method="post" onsubmit="launchRocket(event)">
+            <div class="input">
+                <label for="first-name">First Name</label>
+                <i class='bx bxs-user' ></i>
+                <input type="text" id="first-name" placeholder="John" required>
+            </div>
+            <div class="input">
+                <label for="last-name">Last Name</label>
+                <i class='bx bxs-user-detail'></i>
+                <input type="text" id="last-name" placeholder="Doe">
+            </div>
+            <div class="email input">
+                <label for="email">Email</label>
+                <i class='bx bxs-envelope'></i>
+                <input type="email" id="email" placeholder="demo@demo.com" required>
+            </div>
+
+            <div class="mobile input">
+                <label for="mobile-number">Mobile No.</label>
+                <i class='bx bxs-phone'></i>
+                <input type="number" id="mobile-number" placeholder="XXXXXXXXXX" required>
+            </div>
+            <div class="password input">
+                <label for="password">Password</label>
+                <i class='bx bx-lock'></i>
+                <input type="password" id="password" required>
+            </div>
+            <div class="password input">
+                <label for="confirm-password">Confirm Password</label>
+                <i class='bx bx-check-shield'></i>
+                <input type="password" id="confirm-password" required>
+            </div>
+            <div class="submit-button">
+                <button type="submit">Create Account</button>
+            </div>
+            <div class="login">
+                Already have an account?<a href="#">Login</a>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
